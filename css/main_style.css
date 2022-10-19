@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* #ffd7d8    - > 연핑크
+   #b8e3ea    - > 하늘색
+   #f6f4df    - > 베이지  */
+
+/* reset */
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+img{border: none; display: block;}
+address, em{font-style: normal;}
+
+body, section, header, footer, div, aside, nav, ul, li, ol, h1,h2,h3,h4,h5,h6,p, a, tr,td,th,article{font-family: 'Noto Sans KR', sans-serif; font-size:14px; line-height: 1.6em; color: #000;}
+
+/* common */
+.btn{display: block; width: 300px; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px; transition-duration: 0.6s;}
+.btn:hover{background-color: #000; color: #FFF;}
+.con_title{font-size: 2em; font-weight: bold; margin-bottom: 50px; }
+.con_text{font-size: 1.3em; margin-bottom: 50px; }
+
+/* ------ header --------- */
+#header {position: relative; height: 100px; background-color: #FFF; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);}
+#header .top_logo{position: absolute; left: 10px; top: 9px;}
+#header .gnb{position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
+#header .gnb>ul{display: flex;}
+#header .gnb>ul>li>a{display: block; line-height: 100px; width: 120px; text-align: center; font-size: 1.1em; font-weight: bold;}
+#header .gnb>ul>li:nth-child(4)>a{color:#b8e3ea ;}
+#header .util{position: absolute; right: 10px; top:40px;}
+#header .util ul{display: flex;}
+#header .util ul li{margin-left: 20px;}
+
+/* --------topBanner ---------- */
+#topBanner{position: relative; height:600px ; background-image: url(../img/top_banner.jpg); background-position: center; background-size: cover;}
+#topBanner .top_inner{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);}
+#topBanner .top_inner h2{font-size: 4em; color: #FFF; font-weight: bold; text-align: center; margin-bottom: 30px;}
+#topBanner .top_inner .btn{border-color: #f6f4df; color: #f6f4df; margin: 0 auto; }
+#topBanner .top_inner .btn:hover{background-color: #f6f4df; color: #000;}
+
+/* --------golf & merci---------- */
+.con1{position: relative; width: 1200px; margin: 100px auto; display: flex;}
+.con1 .con1_text{position: relative; width: 50%; display: flex; flex-direction: column; justify-content: center; background-color: #f6f4df; padding: 40px; box-sizing: border-box;}
+.con1 .con1_img{position: relative; width: 50%;}
+.con1 .con1_img img{width: 100%;}
+
+/* --------polo ---------- */
+#polo{position: relative; width: 1200px; margin: 100px auto; text-align: center; }
+#polo .btn{margin: 0 auto;}
+#polo .polo_list{position: relative; margin: 80px 0; display: flex; justify-content: space-between;}
+#polo .polo_list li{width: 32%; position: relative;}
+#polo .polo_list li img{width: 100%;}
+#polo .polo_list li .over_box{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: flex; flex-direction: column; justify-content: center;  opacity: 0; transition-duration: 0.6s;}
+#polo .polo_list li .over_box h3{color: #FFF; font-size: 1.3em; font-weight: bold; position: relative; top: 50px; opacity: 0; transition-duration: 0.6s; transition-delay: 200ms;}
+#polo .polo_list li .over_box p{color: #FFF; font-size: 1.1em; position: relative; top: 50px; opacity: 0; transition-duration: 0.6s;transition-delay: 400ms;}
+#polo .polo_list li .over_box:hover{opacity: 1;}
+#polo .polo_list li .over_box:hover h3{top: 0; opacity: 1;}
+#polo .polo_list li .over_box:hover p{top: 0; opacity: 1;}
+/* --------midBanner ---------- */
+#midBanner{position: relative; height: 700px; background-image: url(../img/edition_main.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;}
+#midBanner .mid_inner{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-align: center;}
+#midBanner .mid_inner .btn{margin: 0 auto;}
+
+
+/* --------footer ---------- */
+#footer{position: relative; width: 1200px; margin: 0 auto; border-top: 1px solid #CCC; padding: 100px 0;}
+#footer .footer_top{position: relative; display: flex;}
+#footer .footer_top .fnb{position: relative; width: 50%;}
+#footer .footer_top .fnb>ul{display: flex;}
+#footer .footer_top .fnb>ul>li{width: 140px; font-weight: bold;}
+#footer .footer_top .fnb>ul>li a{display: block; font-weight: normal; line-height: 1.8em; font-size: 0.9em;}
+#footer .footer_top .fnb>ul>li>ul{margin-top: 10px;}
+#footer .footer_top .kakao{position: relative; width: 50%; display: flex;flex-direction: column; align-items: center; text-align: center;}
+#footer .footer_top .kakao h2{ font-size: 1.3em; font-weight: bold; margin-bottom: 30px;}
+#footer .footer_top .kakao p{ font-weight: bold; margin-bottom: 30px;}
+#footer .footer_bottom address{text-align: center; font-size: 0.8em; color: #999; margin-top: 80px; line-height: 1.6em;}

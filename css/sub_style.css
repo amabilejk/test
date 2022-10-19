@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* #ffd7d8    - > 연핑크
+   #b8e3ea    - > 하늘색
+   #f6f4df    - > 베이지  */
+
+/* reset */
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+img{border: none; display: block;}
+address, em{font-style: normal;}
+
+body, section, header, footer, div, aside, nav, ul, li, ol, h1,h2,h3,h4,h5,h6,p, a, tr,td,th,article{font-family: 'Noto Sans KR', sans-serif; font-size:14px; line-height: 1.6em; color: #000;}
+
+
+/* -------common ------- */
+.contents{position: relative; width: 1200px; margin: 100px auto;}
+.contents .page_title{font-size: 2em; font-weight: bold; margin-bottom: 50px; }
+.contents .page_info{font-size: 1.3em; margin-bottom: 50px; }
+.btn{display: block; width: 300px; height: 50px; border: 1px solid #000; text-align: center; line-height: 50px; transition-duration: 0.6s;}
+.btn:hover{background-color: #000; color: #FFF;}
+
+
+/* ------ header --------- */
+#header {position: relative; height: 100px; background-color: #FFF; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);}
+#header .top_logo{position: absolute; left: 10px; top: 9px;}
+#header .gnb{position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
+#header .gnb>ul{display: flex;}
+#header .gnb>ul>li>a{display: block; line-height: 100px; width: 120px; text-align: center; font-size: 1.1em; font-weight: bold;}
+#header .gnb>ul>li:nth-child(4)>a{color:#b8e3ea ;}
+#header .util{position: absolute; right: 10px; top:40px;}
+#header .util ul{display: flex;}
+#header .util ul li{margin-left: 20px;}
+
+/* ----------men start------- */
+#men .png{margin-bottom: 50px; }
+#men .product_list{position: relative;}
+#men .product_list .filter{position: relative; display: flex; justify-content: flex-end;}
+#men .product_list .filter img{margin-left: 10px;}
+#men .product_list .list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#men .product_list .list li{width: 32%; margin-bottom: 6%; text-align: center; border: 1px solid #EEE; padding-bottom: 20px;overflow: hidden;}
+#men .product_list .list li img{width: 100%; transition-duration: 0.6s;}
+#men .product_list .list li img:hover{transform: scale(1.05);}
+#men .product_list .list li h3{font-size: 1.2em; font-weight: bold; margin-bottom:10px; margin-top: -30px; position: relative;}
+#men .product_list .btn{margin: 0 auto;}
+
+/* ----------men end------- */
+
+
+
+/* --------footer ---------- */
+#footer{position: relative; width: 1200px; margin: 0 auto; border-top: 1px solid #CCC; padding: 100px 0;}
+#footer .footer_top{position: relative; display: flex;}
+#footer .footer_top .fnb{position: relative; width: 50%;}
+#footer .footer_top .fnb>ul{display: flex;}
+#footer .footer_top .fnb>ul>li{width: 140px; font-weight: bold;}
+#footer .footer_top .fnb>ul>li a{display: block; font-weight: normal; line-height: 1.8em; font-size: 0.9em;}
+#footer .footer_top .fnb>ul>li>ul{margin-top: 10px;}
+#footer .footer_top .kakao{position: relative; width: 50%; display: flex;flex-direction: column; align-items: center; text-align: center;}
+#footer .footer_top .kakao h2{ font-size: 1.3em; font-weight: bold; margin-bottom: 30px;}
+#footer .footer_top .kakao p{ font-weight: bold; margin-bottom: 30px;}
+#footer .footer_bottom address{text-align: center; font-size: 0.8em; color: #999; margin-top: 80px; line-height: 1.6em;}
